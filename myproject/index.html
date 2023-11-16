@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy seller</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body onload="OnloadData()">
+    <header>
+        <div class="banner">
+            <h1>Admin Page</h1>
+        </div>
+    </header>
+    <div class="container">
+        <form action="" id="addProductFrom">
+            <input type="text" name="item" placeholder="Candy name" id="item">
+            <input type="text" name="description" id="description" placeholder="description">
+            <input type="number" name="price" id="price" placeholder="price">
+            <input type="number" name="quantity" id="quantity" placeholder="quantity">
+            <button id="addItem" class="btn">Add item</button>
+        </form>
+    </div>
+    <div class="table-container">
+        <table id="productTable">
+            <tbody>
+                <tr>
+                    <th>Candy name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Buy</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
